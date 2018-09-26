@@ -106,8 +106,7 @@ Durch den JEP 330 (Launch Single-File Source-Code Programs) können jetzt Klasse
 kompiliert wurden. 
 Programme mit einer einzigen Datei sind heutzutage beim Schreiben kleiner Hilfsprogramme üblich und insbesondere
 die Domäne von Skriptsprachen. 
-Nun kann man sich auch in Java die unnötige Arbeit sparen, ein Programm vor der Ausführung 
-zu kompilieren und verringert zudem die Hürde für Neulinge. 
+Nun kann man sich auch in Java die unnötige Arbeit sparen und das verringert zugleich die Einstiegshürde für Java-Neulinge. 
 
 Bis Java 10 konnten Java-Programme auf drei Arten gestartet werden: 
 * als *.class-Datei
