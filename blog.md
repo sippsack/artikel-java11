@@ -1,6 +1,6 @@
 # Java 11 ist erschienen
 
-Alle halbe Jahre wieder kommt das nächste Java Release und so ist nun [Java 11](http://jdk.java.net/11/) erschienen. 
+Alle halbe Jahre wieder kommt das nächste Java Release und so ist nun gerade [Java 11](http://jdk.java.net/11/) herausgekommen. 
 Der Inhalt schien aber zunächst nur zweitrangig zu sein. Die letzten Wochen und Monate waren stark geprägt von den 
 Debatten zu Oracles neuer Support- bzw. Lizenzpolitik und der Frage, ob Java bzw. das JDK überhaupt kostenlos bleiben.  
 
@@ -10,7 +10,7 @@ nutzbar, in Produktion muss ein [Support-Vertrag](https://blogs.oracle.com/java-
 mit Oracle gegen entsprechende Gebühren abgeschlossen werden.
 
 Allerdings ist das Oracle JDK ab sofort binär kompatibel mit dem OpenJDK, welches Opensource unter der GNU General 
-Public License v2 (with the Classpath Exception - GPLv2+CPE) veröffentlichtet ist. 
+Public License v2 (with the Classpath Exception - GPLv2+CPE) veröffentlicht ist. 
 Um das JDK weiterhin in Produktion kostenlos einsetzen zu können, kann man also ab Java 11 das OpenJDK verwenden. 
 Allerdings bietet Oracle immer nur Updates für die aktuelle OpenJDK Version, d. h. mit dem nächsten halbjährlichen Major-Release
 muss man potentiell die Anwendung bereits auf die nächste Version updaten. 
@@ -21,7 +21,7 @@ gibt es also genügend Optionen zwischen kommerziellen Lösungen von Oracle (und
 Lösungen mit dem OpenJDK und dem verlängerten Support des [AdoptOpenJDK-Projekts](https://adoptopenjdk.net/). Aber 
 natürlich gehört etwas Mut dazu, Oracle den Rücken zu kehren und alternativen Java Plattformen eine Chance zu geben.
 
-## Features
+## Neue Features
 
 Die Neuerungen von Java 11 fallen relativ übersichtlich aus. Das verwundert durch den kurzen Zeitraum seit der Veröffentlichung der 
 vorangegangenen Version aber nicht weiter. Die folgenden Java Enhancement Proposals (JEPs) wurden umgesetzt:
@@ -97,8 +97,8 @@ Durch den JEP 330 (Launch Single-File Source-Code Programs) können jetzt Klasse
 kompiliert wurden. 
 Programme mit einer einzigen Datei sind heutzutage beim Schreiben kleiner Hilfsprogramme üblich und insbesondere
 die Domäne von Skriptsprachen. 
-Nun kann man sich auch in Java die unnötige Arbeit sparen, ein Programm vor der Ausführung 
-zu kompilieren und verringert zudem die Hürde für Neulinge. 
+Nun kann man sich auch in Java die unnötige Arbeit sparen und das verringert zugleich die Einstiegshürde für Java-Neulinge. 
+
 
 ```shell
 # java HelloWorld.java
@@ -122,7 +122,7 @@ mit einer kommerziellen Lizenz verwendbaren Profilers Flight Recorder in das Ope
 Oracle JDK ausgeliefert). Das Ziel des Flight Recorders ist das möglichst effiziente Aufzeichnen von Anwendungsdaten,
 um bei Problemen die Java-Anwendung und die JVM analysieren zu können.
 
-# API-Änderungen
+## API-Änderungen
 
 An der Java Klassenbibliothek gab es natürlich auch unzählige kleine Änderungen. Besonders viel hat sich bei Zeichenketten
 getan:
@@ -171,9 +171,10 @@ Mostly obtained from some file
 which we will break into lines
 using the new api
 ```
+
 ## Was wurde entfernt?
 
-Die Ankündigungen in Form von Deprecations in den Version 9 und 10 sind nun in Java 11 Wirklichkeit geworden. 
+Die Ankündigungen in Form von Deprecations in den Versionen 9 und 10 sind nun in Java 11 Wirklichkeit geworden. 
 Im JEP 320 wurden diverse Java Enterprise Packages aus Java SE entfernt, dazu zählen JAX-WS (XML basierte SOAP Webservices 
 inklusive den Tools wsgen und wsimport), JAXB (Java XML Binding inklusive den Tools schemagen und xjc), 
 JAF (Java Beans Activation Framework), Common Annotations (@PostConstruct, @Resource, ...), CORBA 
@@ -225,7 +226,7 @@ int numLetters = switch (day) {
 ```
 
 Mit Raw String Literals wird Java endlich die Möglichkeit bekommen, mehrzeilige Zeichenketten zu definieren, die 
-zusätzlich Escape-Sequenzen (\..) ignorieren. Damit lässt sich viel einfacher mit regulären Ausdrücke und 
+zusätzlich Escape-Sequenzen (\..) ignorieren. Damit lässt sich viel einfacher mit regulären Ausdrücken und 
 Windows-Dateipfaden umgehen. Einzig das Ersetzen von Variablen (Stringinterpolation) ist im Moment noch nicht geplant, 
 ein Feature welches alternative Sprachen wie Groovy, Ruby und JavaScript schon länger unterstützen. 
 
@@ -247,5 +248,5 @@ String script2 = "function hello() {\n" +
                 "hello();\n";
 ```
 
-Wir Java-Entwickler können uns also auch in den nächsten auf viele interessante neue Funktionen freuen. In diesem Sinne 
+Wir Java-Entwickler können uns also auch in den nächsten auf viele interessante neue Features freuen. In diesem Sinne 
 viel Spaß beim Ausprobieren der neuen Funktionen von Java 11.

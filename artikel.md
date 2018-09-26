@@ -188,7 +188,7 @@ using the new api
 ```
 ## Was wurde entfernt?
 
-Die Ankündigungen in Form von Deprecations in den Version 9 und 10 sind nun in Java 11 Wirklichkeit geworden. 
+Die Ankündigungen in Form von Deprecations in den Versionen 9 und 10 sind nun in Java 11 Wirklichkeit geworden. 
 Im JEP 320 wurden diverse Java Enterprise Packages aus Java SE entfernt, dazu zählen JAX-WS (XML basierte SOAP Webservices 
 inklusive den Tools wsgen und wsimport), JAXB (Java XML Binding inklusive den Tools schemagen und xjc), 
 JAF (Java Beans Activation Framework), Common Annotations (@PostConstruct, @Resource, ...), CORBA 
@@ -263,7 +263,7 @@ int numLetters = switch (day) {
 ```
 
 Mit Raw String Literals wird Java endlich die Möglichkeit bekommen, mehrzeilige Zeichenketten zu definieren, die 
-zusätzlich Escape-Sequenzen (\..) ignorieren. Damit lässt sich viel einfacher mit regulären Ausdrücke und 
+zusätzlich Escape-Sequenzen (\..) ignorieren. Damit lässt sich viel einfacher mit regulären Ausdrücken und 
 Windows-Dateipfaden umgehen. Einzig das Ersetzen von Variablen (Stringinterpolation) ist im Moment noch nicht geplant, 
 ein Feature welches alternative Sprachen wie Groovy, Ruby und JavaScript schon länger unterstützen. 
 
