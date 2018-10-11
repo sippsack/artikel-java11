@@ -1,3 +1,6 @@
+https://blogs.oracle.com/java-platform-group/building-jdk-11-together
+
+
 # Was gibt es Neues bei Java 11
 
 Pünktlich sechs Monate nach Java 10 ist Ende September bereits [Java 11](http://jdk.java.net/11/) erschienen. Dabei waren 

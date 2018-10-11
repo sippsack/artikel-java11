@@ -1,0 +1,26 @@
+Wie bist du zur Softwareentwicklung gekommen?
+
+Eigentlich relativ spät. Viele aus meiner Generation haben schon als Kind mit C64, Amiga oder Atari gespielt und auch mal kleine Basic-Programme abgetippt. Da hatten wir noch nicht mal einen langweiligen Personal-Computer zu Hause. In der 10. Klasse durfte ich dann in einer Projektwoche bei meinem späteren Informatiklehrer LEDs über die parallele Schnittstelle zum Leuchten bringen. Und ab da ging es los, zunächst mit Turbo Pascal im Informatik-Unterricht bzw. zur Ansteuerung der heimischen Modelleisenbahn und im Studium dann mit Java, PHP und diversen Webtechnologien. Die Faszination Softwareentwicklung hat mich bis heute nicht losgelassen.
+
+Was ist für dich der schönste Aspekt in der Softwareentwicklung?
+
+Ich bin immer wieder stolz, wenn ich eine elegante Lösung für ein wie auch immer geartetes Problem gefunden habe. Das mag noch so trivial sein, wenn es dem Benutzer Zeit und unnötige Arbeit erspart, macht mich das froh. Dank der großartigen Java Community kann ich als wissbegieriger Mensch zudem täglich Neues lernen. Durch meine Veröffentlichungen und Vorträge versuche ich der Gemeinschaft etwas zurückzugeben. 
+
+Was ist für dich ein weniger schöner Aspekt?
+
+Mir ist die ganze Technologiewelt zu schnelllebig geworden. Einerseits macht es die Arbeit in unserer Branche zwar sehr spannend. Mich frustriert es aber letztlich, wenn ich durch meine begrenzte Zeit viele interessante Themen nicht näher anschauen kann. Trotzdem glaube ich weiter an den ständigen Lernprozess und gebe mir alle Mühe, mich nicht abhängen zu lassen.
+
+Wie und wann bist du auf Java gestoßen?
+
+Das war bereits in den Anfangsjahren, so etwa um 1998. In meinem Studienjahrgang wurden die grundlegenden Programmierkurse gerade von C/C++ auf Java umgestellt. Besonders fasziniert hat mich damals die Programmierung graphischer Oberflächen mit AWT und Swing. Spannend find ich das Java Ökosystem bis heute, auch wenn sich mein Fokus eher in Richtung Architektur, Backend und Webtechnologien verschoben hat.
+
+Wenn du für einen Tag König der Java-Welt wärst, was würdest du verändern?
+
+Natürlich gibt es einige Schwachstellen, aber tatsächlich bin ich mit der aktuellen Entwicklung von Java relativ zufrieden. Bei Java SE ist das Opensource Projekt OpenJDK nun die Basis für das JDK von Oracle und anderen Anbietern (Azul, Redhat, ...). Bei Java EE geht die Transition zur Eclipse Foundation zwar langsam aber stetig voran. Ich glaube fest daran, dass wir in den nächsten Jahren noch viel Freude mit Java und den alternativen Sprachen auf der Java Plattform haben werden.
+
+Was ist zurzeit dein Lieblings-Buch?
+Zwar stapeln sich auf meinem Nachtisch diverse IT-Bücher, (vor)lesen tue ich aktuell allerdings nur Kinderbücher wie "Ritter Tobi" oder "Neues vom Möwenweg". Sehr gespannt bin ich aber auf die Neuauflage von Martin Fowlers Refactoring Buch. Zum Glück muss man da nur etwa 100 Seiten lesen, die restlichen Kapitel sind als Katalog zum Nachschlagen gedacht.
+
+Was machst du in deinem anderen Leben?
+
+Ich versuche möglichst viel Zeit mit meiner Familie zu verbringen, meine drei Kinder halten mich dabei ordentlich auf Trab. Als Abwechselung zur sitzenden Bürotätigkeit betätige ich mich zudem gern an der frischen Luft, sowohl zu Fuß, als auch mit dem Rad oder im Winter auf Skiern. Dazu engagiere ich mich in diversen Sportvereinen als Übungsleiter.
