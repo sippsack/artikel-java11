@@ -1,11 +1,9 @@
-https://blogs.oracle.com/java-platform-group/building-jdk-11-together
+# Was gibt es Neues bei Java 11?
 
-
-# Was gibt es Neues bei Java 11
-
-Pünktlich sechs Monate nach Java 10 ist Ende September bereits [Java 11](http://jdk.java.net/11/) erschienen. Dabei waren 
+Pünktlich sechs Monate nach Java 10 ist Ende September bereits [Java 11](http://jdk.java.net/11/) erschienen. Allerdings waren 
 die letzten Wochen und Monate stark geprägt von den Debatten zu Oracles neuer Support- bzw. Lizenzpolitik und der Frage, ob 
-Java bzw. das JDK überhaupt kostenlos bleiben. Die neuen Features und die Änderungen an der Syntax und der Klassenbibliothek  
+Java bzw. das JDK überhaupt kostenlos bleiben. Die Informationen zu den neuen Features und die Änderungen an der Syntax bzw. 
+der Klassenbibliothek gingen dabei etwas unter. Im Rahmen dieses Artikels wollen wir beide Themen näher beleuchten. 
 
 Mit Java 11 führt Oracle eine neue Lizenz- und Support-Strategie ein. Freie Updates für die letzte Long Term Support (LTS) 
 Version 8 wird es ab Januar 2019 nicht mehr geben. Zudem ist ab Java 11 das Oracle JDK nur noch in der Entwicklung kostenlos
@@ -19,17 +17,16 @@ Allerdings bietet Oracle immer nur Updates für die aktuelle OpenJDK Version, d.
 muss man potentiell die Anwendung bereits auf die nächste Version updaten. 
 
 Alternative Anbieter wie Azul und IBM haben im Rahmen des AdoptOpenJDK-Projekts allerdings bereits angekündigt, die 
-LTS-Versionen (z. B. Java 11) auch bis zu vier Jahre mit kostenlosen Updates zu versorgen. Auch für Kunden von Redhat Enterprise Linux 
-wird das OpenJDK 8 noch mindestens 4 Jahre kostenlos angeboten, OpenJDK 11 war zum Zeitpunkt der Erstellung dieses Artikels auch bereits
-in der Planung. Für uns Anwender der Java Plattform gibt es also genügend Optionen zwischen kommerziellen Lösungen von Oracle 
+LTS-Versionen (z. B. Java 11) auch bis zu vier Jahre mit kostenlosen Updates zu versorgen. Auch für Kunden von diversen Linux Distributionen (z. B. Red Hat Enterprise Linux) wird das OpenJDK 8 noch mindestens 4 Jahre im Rahmen der Betriebssystem Support Verträge kostenlos mit Updates versorgt werden. Für uns Anwender der Java Plattform gibt es also genügend Optionen zwischen kommerziellen Lösungen von Oracle 
 (und auch Azul Zulu, IBM SDK usw.) und weiterhin freien Lösungen mit dem OpenJDK und dem verlängerten Support des 
-[AdoptOpenJDK-Projekts](https://adoptopenjdk.net/) oder im Rahmen anderer Lizenzvereinbarungen ([Redhat Enterprise Linux](https://access.redhat.com/articles/1299013), [IBM SDK](https://developer.ibm.com/javasdk/2018/04/26/java-standard-edition-ibm-support-statement/), ...). 
-Aber natürlich gehört etwas Mut dazu, Oracle den Rücken zu kehren und alternativen Java Plattformen eine Chance zu geben.
+[AdoptOpenJDK-Projekts](https://adoptopenjdk.net/) oder im Rahmen anderer Lizenzvereinbarungen ([Redhat Enterprise Linux](https://access.redhat.com/articles/1299013), [IBM SDK](https://developer.ibm.com/javasdk/2018/04/26/java-standard-edition-ibm-support-statement/), ...). Aber natürlich gehört etwas Mut dazu, Oracle den Rücken zu kehren und alternativen Java Plattformen eine Chance zu geben.
 
 ## Neue Features
 
 Die Neuerungen von Java 11 fallen relativ übersichtlich aus. Das verwundert durch den kurzen Zeitraum seit der Veröffentlichung der 
-vorangegangenen Version aber nicht weiter. Die folgenden Java Enhancement Proposals (JEPs) wurden umgesetzt:
+vorangegangenen Version aber nicht weiter. Trotzdem wurden insgesamt über [2400 Tickets geschlossen](https://blogs.oracle.com/java-platform-group/building-jdk-11-together). Fast 80 % davon hat natürlich Oracle bearbeitet,
+an den restlichen 20 % waren aber auch viele andere Firmen wie SAP, Red Hat, Google, IBM usw. beteiligt. Ein Großteil der Neuerungen 
+wurde im Rahmen der folgenden Java Enhancement Proposals (JEPs) umgesetzt:
 
 * 181: Nest-Based Access Control
 * 309: Dynamic Class-File Constants
@@ -123,18 +120,17 @@ Auf unixoiden Betriebssystemen können Java-Dateien als Shebang-Files sogar dire
 ```
 
 Weitere erwähnenswerte Änderungen sind die Unterstützung des Unicode 10 Standards und die Integration des bisher nur 
-mit einer kommerziellen Lizenz verwendbaren Profilers Flight Recorder in das OpenJDK (wurde bisher nur mit dem
+mit einer kommerziellen Lizenz verwendbaren Profiling Tools Mission Control und Flight Recorder in das OpenJDK (sie wurden bisher nur mit dem
 Oracle JDK ausgeliefert). Das Ziel des Flight Recorders ist das möglichst effiziente Aufzeichnen von Anwendungsdaten,
 um bei Problemen die Java-Anwendung und die JVM analysieren zu können. Etwas verrückt scheint zunächst auch der JEP 318 
 (Epsilon: A No-Op Garbage Collector) zu sein. Dabei handelt es sich um einen neuen Garbage Collector, der aber gar keine
-Garbage Collection durchführt (deshalb No-Op - No-Operation). Interessant ist dieses Verhalten aber für Serverless Functions 
-für das Oracle Projekt fn. Da es sich hier um nur sehr kurz laufende Java Anwendungen handelt, wäre eine zwischenzeitlicher 
-Garbage Collector Lauf eher kontraproduktiv und sinnlos, wenn die Anwendung kurz darauf sowieos wieder beendet ist.
+Garbage Collection durchführt (deshalb No-Op, also No-Operation). Interessant ist dieses Verhalten aber für Serverless Functions 
+für das Oracle Projekt fn. Da es sich hier um sehr kurz laufende Java Anwendungen handelt, wäre ein zwischenzeitlicher 
+Garbage Collector Lauf eher kontraproduktiv und sinnlos, wenn die Anwendung kurz darauf sowieso wieder beendet wird.
 
 ## API-Änderungen
 
-An der Java Klassenbibliothek gab es natürlich auch unzählige kleine Änderungen. Besonders viel hat sich bei Zeichenketten
-getan:
+An der Java Klassenbibliothek gab es natürlich auch unzählige kleine Änderungen. Besonders viel hat sich bei String und Character getan:
 
 ```java
 |  Welcome to JShell -- Version 11
@@ -207,12 +203,9 @@ in der Größe angepasste Laufzeitumgebungen erstellen.
 
 ## Fazit und Ausblick
 
-Die großen Überraschungen sind sicherlich ausgeblieben. 
-Vielmehr finalisiert Java 11 angefangene Arbeiten aus den beiden vorangegangenen Versionen, damit es als LTS Release für die nächsten 3 Jahre gut gewappnet ist. 
-Dazu wurden auch einige alte Zöpfe abgeschnitten und zum Beispiel JavaFX und diverse Java EE Packages aus dem JDK entfernt.  
+Die großen Überraschungen sind sicherlich ausgeblieben. Vielmehr finalisiert Java 11 angefangene Arbeiten aus den beiden vorangegangenen Versionen, damit es als LTS Release für die nächsten 3 Jahre gut gewappnet ist. Dazu wurden auch einige alte Zöpfe abgeschnitten und zum Beispiel JavaFX und diverse Java EE Packages aus dem JDK entfernt.  
 
-Java 12 steht bereits in den Startlöchern und wird voraussichtlich im März 2019 erscheinen. Aktuell sind nur zwei Neuerungen 
-geplant, weitere werden aber in den nächsten Wochen folgen:
+Java 12 steht bereits in den Startlöchern und wird voraussichtlich im März 2019 erscheinen. Die Liste der Neuerungen wächst noch, interessant für uns Entwickler sind aber insbesondere die folgenden beiden, weitere werden aber in den nächsten Wochen folgen:
 
 * JEP 325: Switch Expressions
 * JEP 326: Raw String Literals
@@ -257,5 +250,6 @@ String script2 = "function hello() {\n" +
                 "hello();\n";
 ```
 
-Wir Java-Entwickler können uns also auch in den nächsten auf viele interessante neue Features freuen. In diesem Sinne 
-viel Spaß beim Ausprobieren der neuen Funktionen von Java 11.
+Wir Java-Entwickler können uns also auch in den nächsten Jahren auf viele interessante neue Features freuen. Jetzt gilt 
+es aber erstmal, die neuen Funktionen von Java 11 auszuprobieren und sich mit den veränderten Bedingungen bei den Lizenzen 
+und beim Support auseinander zu setzen.
