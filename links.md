@@ -5,6 +5,7 @@
 * http://openjdk.java.net/projects/jdk/11/
 * https://speakerdeck.com/michaelvitz/java-10-11-and-beyond
 * https://blogs.oracle.com/java-platform-group/building-jdk-11-together
+* https://news.kynosarges.org/2018/09/26/java-se-11-the-great-removal/
 
 # Migration zu Java 11
 * https://blog.codefx.org/java/java-11-migration-guide/
